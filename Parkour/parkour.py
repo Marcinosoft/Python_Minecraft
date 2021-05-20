@@ -53,7 +53,7 @@ while True:
             mc.setBlock(x1,y1,z1,block.WOOL.id,kolor)
         else:
             punkty -= 1                            # odejmij punkt
-        # teleportuj garcza na blok startowy
+        # teleportuj gracza na blok startowy
         mc.entity.setPos(id_gracza, x1, y1+1, z1)
 
     # jeśli gracz skoczył na blok docelowy:
