@@ -29,7 +29,7 @@ mc.setBlocks(-10,60,-15, 3*ilosc_blokow, 80, 15, block.AIR.id)
 x1, y1, z1 = 0, 70, 0                              # współrzędne bloku startowego x1,y1,z1
 mc.setBlock(x1, y1, z1, block.WOOL.id, 1)          # wstaw blok startowy, białą wełnę
 id_gracza = mc.getPlayerEntityId(nick_gracza)      # pobierz id gracza
-mc.entity.setTilePos(id_gracza, x1, y1+1, z1)          # teleportuj gracza na blok startowy
+mc.entity.setTilePos(id_gracza, x1, y1+1, z1)      # teleportuj gracza na blok startowy
 x2, y2, z2 = losuj_blok(x1, y1, z1)                # wylosuj i wstaw blok docelowy w x2,y2,z2
 
 mc.postToChat(f'Gracz {nick_gracza} zaczyna parkour')  # poinformuj o starcie gry na czacie
